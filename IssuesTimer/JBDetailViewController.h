@@ -1,0 +1,16 @@
+//
+//  JBDetailViewController.h
+//  IssuesTimer
+//
+//  Created by Julien Blanchard on 10/7/13.
+//  Copyright (c) 2013 Julien Blanchard. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface JBDetailViewController : UIViewController
+
+@property (strong, nonatomic) id detailItem;
+
+@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@end

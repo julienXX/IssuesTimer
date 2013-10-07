@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A92564999374BA1A0AF2F78 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCA8214C0C3438080E123C8 /* SystemConfiguration.framework */; };
+		0DDBBED79F22440EA0ADD2FC /* UAGithubEngineConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B76B056B9EE4879A109B6BA /* UAGithubEngineConstants.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		23B0C3FCA6184A4DBD440075 /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB8CFA29A994A7582C5BB4E /* NSArray+Utilities.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		27FC4CFD0F8D44EEB9560055 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C67DA883624ACBA1B5C417 /* NSData+Base64.h */; };
+		2F4937198E374A5D92E73E2E /* NSString+UAGithubEngineUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3431048C3DCB479FA02549FE /* NSString+UAGithubEngineUtilities.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		33382AA316CF455F888A2B21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DD19118C7540E0B3E3FF1C /* Foundation.framework */; };
+		3359188DF0564CB6A4FFC8E9 /* UAReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4FA62E87C0454DB44D605C /* UAReachability.h */; };
+		38D9D4FCCC714976B819B7C4 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E37F5748E4A42EDABF99DC4 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		468C202373A14F919486D6BC /* NSString+UAGithubEngineUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BF45CD429A48447AB5274B36 /* NSString+UAGithubEngineUtilities.h */; };
+		5E34A379C17C472DBC7D5DD5 /* Pods-UAGithubEngine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 176D9AFF626D4C95AC4DF26F /* Pods-UAGithubEngine-dummy.m */; };
+		5FF6E886A6534CF19A236BC0 /* libPods-UAGithubEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AC3CAB38E24D2CACCEC489 /* libPods-UAGithubEngine.a */; };
+		62631EB475CB4AF9A71F6209 /* UAGithubEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E7202A38081442B784B2D3E9 /* UAGithubEngine.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		65D821AADCED486C875989FD /* UAGithubEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 95162F26FC124779881C9771 /* UAGithubEngine.h */; };
+		712B67D66B444721991A03B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DD19118C7540E0B3E3FF1C /* Foundation.framework */; };
+		8B291017803640DBB428063E /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D03237DA0ABE4B459094063E /* Pods-dummy.m */; };
+		8CD27EB1B19448E6A99924E7 /* NSInvocation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8663AB614F44EDA06273DD /* NSInvocation+Blocks.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		91A07698FF694DC595362FE8 /* NSString+UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = F9531DDC68014235ABC92FA5 /* NSString+UUID.h */; };
+		9B5BD66550274806AC0CC39C /* NSArray+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA5A5776C99480EB3CCE7B8 /* NSArray+Utilities.h */; };
+		A0E5AA8FA20D4C66B9100F1E /* UAReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FBD59F524A4B6085BEDCAF /* UAReachability.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A1296A19949241C9A4501088 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = B57C43697652458DA925D534 /* NSString+UUID.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B9CDB241E0884F9B96554459 /* UAGithubEngineRequestTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 637A1A49E01547C784CCD166 /* UAGithubEngineRequestTypes.h */; };
+		BFE56F2952EA4E1086095E29 /* UAGithubJSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F46CF5D1D764179B4BB1CBF /* UAGithubJSONParser.h */; };
+		C1C36473D87545CBBD4F9C6A /* UAGithubURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9D7B649DA24880BE42A2B0 /* UAGithubURLConnection.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		CE3A4AA34BEC4462AFBDEF60 /* UAGithubEngineConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2888B74DFCD241AC87247EA0 /* UAGithubEngineConstants.h */; };
+		D99DDE5275EB48D2BC3D6C88 /* NSInvocation+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B7D75C844574C778B6A28A8 /* NSInvocation+Blocks.h */; };
+		EFE80313402C4FFEA7104011 /* UAGithubURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6635253AFCF4408CB0C9AE7F /* UAGithubURLConnection.h */; };
+		F22A19494A72458C88F0D8B6 /* UAGithubJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D1443EAC2FAF46A4AB70762C /* UAGithubJSONParser.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AA02B92220A48B0AA696074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37386A6152014E3C9A6CC549 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5AB1D1FEA6C4B15B2831A1D;
+			remoteInfo = "Pods-UAGithubEngine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D4FA62E87C0454DB44D605C /* UAReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAReachability.h; path = UAGithubEngine/UAReachability.h; sourceTree = "<group>"; };
+		176D9AFF626D4C95AC4DF26F /* Pods-UAGithubEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UAGithubEngine-dummy.m"; sourceTree = "<group>"; };
+		2888B74DFCD241AC87247EA0 /* UAGithubEngineConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAGithubEngineConstants.h; path = UAGithubEngine/UAGithubEngineConstants.h; sourceTree = "<group>"; };
+		28FBD59F524A4B6085BEDCAF /* UAReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UAReachability.m; path = UAGithubEngine/UAReachability.m; sourceTree = "<group>"; };
+		2C04776189B74FE3B736BB94 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCA8214C0C3438080E123C8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3431048C3DCB479FA02549FE /* NSString+UAGithubEngineUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+UAGithubEngineUtilities.m"; path = "UAGithubEngine/NSString+UAGithubEngineUtilities.m"; sourceTree = "<group>"; };
+		3B8663AB614F44EDA06273DD /* NSInvocation+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Blocks.m"; path = "UAGithubEngine/NSInvocation+Blocks.m"; sourceTree = "<group>"; };
+		3E2401D1561F4716B12CC4B8 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3E37F5748E4A42EDABF99DC4 /* NSData+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "UAGithubEngine/NSData+Base64.m"; sourceTree = "<group>"; };
+		637A1A49E01547C784CCD166 /* UAGithubEngineRequestTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAGithubEngineRequestTypes.h; path = UAGithubEngine/UAGithubEngineRequestTypes.h; sourceTree = "<group>"; };
+		6425690BB7EA4E159511F5E9 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		6635253AFCF4408CB0C9AE7F /* UAGithubURLConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAGithubURLConnection.h; path = UAGithubEngine/UAGithubURLConnection.h; sourceTree = "<group>"; };
+		6B7D75C844574C778B6A28A8 /* NSInvocation+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Blocks.h"; path = "UAGithubEngine/NSInvocation+Blocks.h"; sourceTree = "<group>"; };
+		6F46CF5D1D764179B4BB1CBF /* UAGithubJSONParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAGithubJSONParser.h; path = UAGithubEngine/UAGithubJSONParser.h; sourceTree = "<group>"; };
+		71C67DA883624ACBA1B5C417 /* NSData+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "UAGithubEngine/NSData+Base64.h"; sourceTree = "<group>"; };
+		8B76B056B9EE4879A109B6BA /* UAGithubEngineConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UAGithubEngineConstants.m; path = UAGithubEngine/UAGithubEngineConstants.m; sourceTree = "<group>"; };
+		95162F26FC124779881C9771 /* UAGithubEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAGithubEngine.h; path = UAGithubEngine/UAGithubEngine.h; sourceTree = "<group>"; };
+		96DD19118C7540E0B3E3FF1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C7CE0B6C01B45BE86D16ACB /* Pods-UAGithubEngine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UAGithubEngine.xcconfig"; sourceTree = "<group>"; };
+		A2AC3CAB38E24D2CACCEC489 /* libPods-UAGithubEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UAGithubEngine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E7D586D55F4EE38DACDB2C /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADCBF508933A44CD9D0D786D /* Pods-UAGithubEngine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UAGithubEngine-prefix.pch"; sourceTree = "<group>"; };
+		B0D9EFC239DE43A3B7EF0CD9 /* Pods-UAGithubEngine-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UAGithubEngine-Private.xcconfig"; sourceTree = "<group>"; };
+		B57A8EB43F2C4ED2BC07132E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B57C43697652458DA925D534 /* NSString+UUID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+UUID.m"; path = "UAGithubEngine/NSString+UUID.m"; sourceTree = "<group>"; };
+		BAA5A5776C99480EB3CCE7B8 /* NSArray+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Utilities.h"; path = "UAGithubEngine/NSArray+Utilities.h"; sourceTree = "<group>"; };
+		BE5A61A7DFE14DBFB7A8B818 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		BF45CD429A48447AB5274B36 /* NSString+UAGithubEngineUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+UAGithubEngineUtilities.h"; path = "UAGithubEngine/NSString+UAGithubEngineUtilities.h"; sourceTree = "<group>"; };
+		D03237DA0ABE4B459094063E /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		D1443EAC2FAF46A4AB70762C /* UAGithubJSONParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UAGithubJSONParser.m; path = UAGithubEngine/UAGithubJSONParser.m; sourceTree = "<group>"; };
+		DBB8CFA29A994A7582C5BB4E /* NSArray+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Utilities.m"; path = "UAGithubEngine/NSArray+Utilities.m"; sourceTree = "<group>"; };
+		DE49C0247F8A44EB81ADB53B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
+		E7202A38081442B784B2D3E9 /* UAGithubEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UAGithubEngine.m; path = UAGithubEngine/UAGithubEngine.m; sourceTree = "<group>"; };
+		F9531DDC68014235ABC92FA5 /* NSString+UUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+UUID.h"; path = "UAGithubEngine/NSString+UUID.h"; sourceTree = "<group>"; };
+		FD9D7B649DA24880BE42A2B0 /* UAGithubURLConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UAGithubURLConnection.m; path = UAGithubEngine/UAGithubURLConnection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1051141025AB44ABA974CC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712B67D66B444721991A03B8 /* Foundation.framework in Frameworks */,
+				0A92564999374BA1A0AF2F78 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		178CDD0E1C2E412E86042D96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33382AA316CF455F888A2B21 /* Foundation.framework in Frameworks */,
+				5FF6E886A6534CF19A236BC0 /* libPods-UAGithubEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		192F656945F842F2853B4BE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2AC3CAB38E24D2CACCEC489 /* libPods-UAGithubEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FDFC5DD4090413CB302EE25 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8CBF8E57F144A798008F3B0 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		44955570A2F34C3BB5C5A518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96DD19118C7540E0B3E3FF1C /* Foundation.framework */,
+				2DCA8214C0C3438080E123C8 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C2080F3CC6349E89DC41E1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9B25863224048C88A84CC55 /* UAGithubEngine */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FB866EA17D14C1B9E281187 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C04776189B74FE3B736BB94 /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		924557005B1645D9B648499B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAA5A5776C99480EB3CCE7B8 /* NSArray+Utilities.h */,
+				71C67DA883624ACBA1B5C417 /* NSData+Base64.h */,
+				6B7D75C844574C778B6A28A8 /* NSInvocation+Blocks.h */,
+				BF45CD429A48447AB5274B36 /* NSString+UAGithubEngineUtilities.h */,
+				F9531DDC68014235ABC92FA5 /* NSString+UUID.h */,
+				95162F26FC124779881C9771 /* UAGithubEngine.h */,
+				2888B74DFCD241AC87247EA0 /* UAGithubEngineConstants.h */,
+				637A1A49E01547C784CCD166 /* UAGithubEngineRequestTypes.h */,
+				6F46CF5D1D764179B4BB1CBF /* UAGithubJSONParser.h */,
+				6635253AFCF4408CB0C9AE7F /* UAGithubURLConnection.h */,
+				0D4FA62E87C0454DB44D605C /* UAReachability.h */,
+				DBB8CFA29A994A7582C5BB4E /* NSArray+Utilities.m */,
+				3E37F5748E4A42EDABF99DC4 /* NSData+Base64.m */,
+				3B8663AB614F44EDA06273DD /* NSInvocation+Blocks.m */,
+				3431048C3DCB479FA02549FE /* NSString+UAGithubEngineUtilities.m */,
+				B57C43697652458DA925D534 /* NSString+UUID.m */,
+				E7202A38081442B784B2D3E9 /* UAGithubEngine.m */,
+				8B76B056B9EE4879A109B6BA /* UAGithubEngineConstants.m */,
+				D1443EAC2FAF46A4AB70762C /* UAGithubJSONParser.m */,
+				FD9D7B649DA24880BE42A2B0 /* UAGithubURLConnection.m */,
+				28FBD59F524A4B6085BEDCAF /* UAReachability.m */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A9B25863224048C88A84CC55 /* UAGithubEngine */ = {
+			isa = PBXGroup;
+			children = (
+				192F656945F842F2853B4BE0 /* Products */,
+				924557005B1645D9B648499B /* Source Files */,
+				D37811BC01AB45E2A5D5F8AF /* Support Files */,
+			);
+			path = UAGithubEngine;
+			sourceTree = "<group>";
+		};
+		B39910C8324A4E17BF27A1CF = {
+			isa = PBXGroup;
+			children = (
+				44955570A2F34C3BB5C5A518 /* Frameworks */,
+				5C2080F3CC6349E89DC41E1A /* Pods */,
+				7FB866EA17D14C1B9E281187 /* Products */,
+				2FDFC5DD4090413CB302EE25 /* Targets Support Files */,
+				3E2401D1561F4716B12CC4B8 /* Podfile */,
+			);
+			sourceTree = "<group>";
+		};
+		D37811BC01AB45E2A5D5F8AF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				176D9AFF626D4C95AC4DF26F /* Pods-UAGithubEngine-dummy.m */,
+				ADCBF508933A44CD9D0D786D /* Pods-UAGithubEngine-prefix.pch */,
+				9C7CE0B6C01B45BE86D16ACB /* Pods-UAGithubEngine.xcconfig */,
+				B0D9EFC239DE43A3B7EF0CD9 /* Pods-UAGithubEngine-Private.xcconfig */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		D8CBF8E57F144A798008F3B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6425690BB7EA4E159511F5E9 /* Pods-environment.h */,
+				D03237DA0ABE4B459094063E /* Pods-dummy.m */,
+				B57A8EB43F2C4ED2BC07132E /* Pods-acknowledgements.markdown */,
+				A5E7D586D55F4EE38DACDB2C /* Pods-acknowledgements.plist */,
+				BE5A61A7DFE14DBFB7A8B818 /* Pods-resources.sh */,
+				DE49C0247F8A44EB81ADB53B /* Pods.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EC363988785B4ECD80ECC0DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B5BD66550274806AC0CC39C /* NSArray+Utilities.h in Headers */,
+				27FC4CFD0F8D44EEB9560055 /* NSData+Base64.h in Headers */,
+				D99DDE5275EB48D2BC3D6C88 /* NSInvocation+Blocks.h in Headers */,
+				468C202373A14F919486D6BC /* NSString+UAGithubEngineUtilities.h in Headers */,
+				91A07698FF694DC595362FE8 /* NSString+UUID.h in Headers */,
+				65D821AADCED486C875989FD /* UAGithubEngine.h in Headers */,
+				CE3A4AA34BEC4462AFBDEF60 /* UAGithubEngineConstants.h in Headers */,
+				B9CDB241E0884F9B96554459 /* UAGithubEngineRequestTypes.h in Headers */,
+				BFE56F2952EA4E1086095E29 /* UAGithubJSONParser.h in Headers */,
+				EFE80313402C4FFEA7104011 /* UAGithubURLConnection.h in Headers */,
+				3359188DF0564CB6A4FFC8E9 /* UAReachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D5AB7C7E63B4BDD9199BA30 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8F800095CE847B0B175AEED /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				A25356CB5B3C4B478FD1DD4E /* Sources */,
+				178CDD0E1C2E412E86042D96 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19954EE6DC114709B895A370 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 2C04776189B74FE3B736BB94 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C5AB1D1FEA6C4B15B2831A1D /* Pods-UAGithubEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4D8A1639B0E4E03870F937D /* Build configuration list for PBXNativeTarget "Pods-UAGithubEngine" */;
+			buildPhases = (
+				155207356BBC427E81082D21 /* Sources */,
+				1051141025AB44ABA974CC0F /* Frameworks */,
+				EC363988785B4ECD80ECC0DB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-UAGithubEngine";
+			productName = "Pods-UAGithubEngine";
+			productReference = A2AC3CAB38E24D2CACCEC489 /* libPods-UAGithubEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37386A6152014E3C9A6CC549 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = FA559166754C43349E5B0D55 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B39910C8324A4E17BF27A1CF;
+			productRefGroup = 7FB866EA17D14C1B9E281187 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5AB7C7E63B4BDD9199BA30 /* Pods */,
+				C5AB1D1FEA6C4B15B2831A1D /* Pods-UAGithubEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		155207356BBC427E81082D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B0C3FCA6184A4DBD440075 /* NSArray+Utilities.m in Sources */,
+				38D9D4FCCC714976B819B7C4 /* NSData+Base64.m in Sources */,
+				8CD27EB1B19448E6A99924E7 /* NSInvocation+Blocks.m in Sources */,
+				2F4937198E374A5D92E73E2E /* NSString+UAGithubEngineUtilities.m in Sources */,
+				A1296A19949241C9A4501088 /* NSString+UUID.m in Sources */,
+				5E34A379C17C472DBC7D5DD5 /* Pods-UAGithubEngine-dummy.m in Sources */,
+				62631EB475CB4AF9A71F6209 /* UAGithubEngine.m in Sources */,
+				0DDBBED79F22440EA0ADD2FC /* UAGithubEngineConstants.m in Sources */,
+				F22A19494A72458C88F0D8B6 /* UAGithubJSONParser.m in Sources */,
+				C1C36473D87545CBBD4F9C6A /* UAGithubURLConnection.m in Sources */,
+				A0E5AA8FA20D4C66B9100F1E /* UAReachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25356CB5B3C4B478FD1DD4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B291017803640DBB428063E /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19954EE6DC114709B895A370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5AB1D1FEA6C4B15B2831A1D /* Pods-UAGithubEngine */;
+			targetProxy = 0AA02B92220A48B0AA696074 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		044E55EC64354252981A9FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		12D7261E8EB64601AAA6BC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE49C0247F8A44EB81ADB53B /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C0B2EB38E0F45B2BF66CF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D9EFC239DE43A3B7EF0CD9 /* Pods-UAGithubEngine-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-UAGithubEngine-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C8E7D442A7349FBB8848633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		C3D9EF56B99F447099AE155F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D9EFC239DE43A3B7EF0CD9 /* Pods-UAGithubEngine-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-UAGithubEngine-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F11E2C61D19942378C0CF8A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE49C0247F8A44EB81ADB53B /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4D8A1639B0E4E03870F937D /* Build configuration list for PBXNativeTarget "Pods-UAGithubEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D9EF56B99F447099AE155F /* Debug */,
+				7C0B2EB38E0F45B2BF66CF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8F800095CE847B0B175AEED /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11E2C61D19942378C0CF8A6 /* Debug */,
+				12D7261E8EB64601AAA6BC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA559166754C43349E5B0D55 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044E55EC64354252981A9FE2 /* Debug */,
+				9C8E7D442A7349FBB8848633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37386A6152014E3C9A6CC549 /* Project object */;
+}

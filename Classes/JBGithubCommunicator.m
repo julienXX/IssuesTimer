@@ -1,0 +1,40 @@
+//
+//  JBGithubCommunicator.m
+//  IssuesTimer
+//
+//  Created by Julien Blanchard on 10/7/13.
+//  Copyright (c) 2013 Julien Blanchard. All rights reserved.
+//
+
+#import "JBGithubCommunicator.h"
+#import "JBGithubCommunicatorDelegate.h"
+
+#define USERNAME @"foo"
+#define PASSWORD @"bar"
+
+@implementation JBGithubCommunicator
+
+- (void) getRepos
+{
+    UAGithubEngine *engine = [[UAGithubEngine alloc] initWithUsername:USERNAME password:PASSWORD withReachability:YES];
+    
+    [engine repositoriesWithSuccess:^(id response) {
+        //        [self setRepos:response];
+        //        NSLog(@"Got an array of repos: %@", self.repos);
+    } failure:^(NSError *error) {
+        [self githubConnectionError:error];
+    }];
+}
+
+- (void) githubConnectionError:(NSError *)error
+{
+    UIAlertView* dialog = [[UIAlertView alloc] init];
+    [dialog setDelegate:self];
+    [dialog setTitle:@"Can't connect"];
+    [dialog addButtonWithTitle:@"OK"];
+    [dialog show];
+    
+    NSLog(@"Oops: %@", error);
+}
+
+@end
