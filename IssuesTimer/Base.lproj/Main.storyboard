@@ -53,7 +53,7 @@
                                 <connections>
                                     <outlet property="countLabel" destination="JnB-AD-rl8" id="X6e-Bv-ZDb"/>
                                     <outlet property="nameLabel" destination="Dd6-B9-cgI" id="Bss-jo-cXG"/>
-                                    <segue destination="Pu8-kf-qcR" kind="push" id="rwK-6Y-qwJ"/>
+                                    <segue destination="Pu8-kf-qcR" kind="push" identifier="showDetail" id="2TT-w5-oiv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -72,16 +72,16 @@
             </objects>
             <point key="canvasLocation" x="735" y="-464"/>
         </scene>
-        <!--Table View Controller - Detail-->
+        <!--Issues View Controller - Detail-->
         <scene sceneID="2oa-sF-793">
             <objects>
-                <tableViewController title="Detail" id="Pu8-kf-qcR" sceneMemberID="viewController">
+                <tableViewController title="Detail" id="Pu8-kf-qcR" customClass="JBIssuesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ns1-6P-ltK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KJf-0Q-OGR">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KJf-0Q-OGR" customClass="JBDetailCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KJf-0Q-OGR" id="jSj-nT-DC6">
@@ -90,12 +90,8 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Pu8-kf-qcR" id="btY-EI-dpg"/>
-                            <outlet property="delegate" destination="Pu8-kf-qcR" id="nZI-fC-Uhf"/>
-                        </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="uaY-b8-XDS"/>
+                    <navigationItem key="navigationItem" title="Repository" id="uaY-b8-XDS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vdl-V3-D4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

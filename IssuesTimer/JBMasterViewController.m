@@ -7,7 +7,7 @@
 //
 
 #import "JBMasterViewController.h"
-#import "JBDetailViewController.h"
+#import "JBIssuesViewController.h"
 #import "JBDetailCell.h"
 #import "JBRepo.h"
 #import "JBRepoManager.h"
@@ -77,7 +77,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *repo = _repos[indexPath.row];
+        JBRepo *repo = _repos[indexPath.row];
         [[segue destinationViewController] setDetailItem:repo];
     }
 }
