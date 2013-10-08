@@ -12,6 +12,7 @@
 		F95F536B1802FC17005D9B3D /* JBRepoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F95F536A1802FC17005D9B3D /* JBRepoBuilder.m */; };
 		F95F536F18030267005D9B3D /* JBRepoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F95F536E18030267005D9B3D /* JBRepoManager.m */; };
 		F95F537218030497005D9B3D /* JBGithubCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F95F537118030497005D9B3D /* JBGithubCommunicator.m */; };
+		F9662C1D18044AAC00295AE3 /* JBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9662C1C18044AAC00295AE3 /* JBDetailViewController.m */; };
 		F9909B281802E47600BDC75F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9909B271802E47600BDC75F /* Foundation.framework */; };
 		F9909B2A1802E47600BDC75F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9909B291802E47600BDC75F /* CoreGraphics.framework */; };
 		F9909B2C1802E47600BDC75F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9909B2B1802E47600BDC75F /* UIKit.framework */; };
@@ -52,6 +53,8 @@
 		F95F536E18030267005D9B3D /* JBRepoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBRepoManager.m; path = Classes/JBRepoManager.m; sourceTree = "<group>"; };
 		F95F537018030497005D9B3D /* JBGithubCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBGithubCommunicator.h; path = Classes/JBGithubCommunicator.h; sourceTree = "<group>"; };
 		F95F537118030497005D9B3D /* JBGithubCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBGithubCommunicator.m; path = Classes/JBGithubCommunicator.m; sourceTree = "<group>"; };
+		F9662C1B18044AAC00295AE3 /* JBDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBDetailViewController.h; sourceTree = "<group>"; };
+		F9662C1C18044AAC00295AE3 /* JBDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBDetailViewController.m; sourceTree = "<group>"; };
 		F9909B241802E47600BDC75F /* IssuesTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IssuesTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9909B271802E47600BDC75F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F9909B291802E47600BDC75F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +158,8 @@
 				F9909B391802E47600BDC75F /* Main.storyboard */,
 				F9909B3C1802E47600BDC75F /* JBMasterViewController.h */,
 				F9909B3D1802E47600BDC75F /* JBMasterViewController.m */,
+				F9662C1B18044AAC00295AE3 /* JBDetailViewController.h */,
+				F9662C1C18044AAC00295AE3 /* JBDetailViewController.m */,
 				F9909B421802E47600BDC75F /* Images.xcassets */,
 				F9909B2E1802E47600BDC75F /* Supporting Files */,
 				F99673DC180319CA002E7777 /* JBDetailCell.h */,
@@ -335,6 +340,7 @@
 				F95F536B1802FC17005D9B3D /* JBRepoBuilder.m in Sources */,
 				F9909B341802E47600BDC75F /* main.m in Sources */,
 				F95F537218030497005D9B3D /* JBGithubCommunicator.m in Sources */,
+				F9662C1D18044AAC00295AE3 /* JBDetailViewController.m in Sources */,
 				F9909B3E1802E47600BDC75F /* JBMasterViewController.m in Sources */,
 				F95F536F18030267005D9B3D /* JBRepoManager.m in Sources */,
 			);
@@ -462,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8F7C12B68EF428FA04C6D7E /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -471,6 +478,7 @@
 				INFOPLIST_FILE = "IssuesTimer/IssuesTimer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -479,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8F7C12B68EF428FA04C6D7E /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -488,6 +497,7 @@
 				INFOPLIST_FILE = "IssuesTimer/IssuesTimer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

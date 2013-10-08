@@ -7,6 +7,7 @@
 //
 
 #import "JBMasterViewController.h"
+#import "JBDetailViewController.h"
 #import "JBDetailCell.h"
 #import "JBRepo.h"
 #import "JBRepoManager.h"
@@ -70,6 +71,15 @@
     [cell.countLabel setText:[NSString stringWithFormat:@"%@", repo.issues_count]];
     
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSDate *repo = _repos[indexPath.row];
+        [[segue destinationViewController] setDetailItem:repo];
+    }
 }
 
 @end
