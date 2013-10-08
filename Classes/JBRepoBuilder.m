@@ -25,14 +25,16 @@
     NSArray *results = [NSArray arrayWithArray:objectNotation];
     
     for (NSDictionary *repoDic in results) {
-        JBRepo *repo = [[JBRepo alloc] init];
-        
-        [repo setValue:[repoDic valueForKey:@"full_name"] forKey:@"full_name"];
-        [repo setValue:[repoDic valueForKey:@"open_issues"] forKey:@"issues_count"];
+        NSString *has_issues = [repoDic valueForKey:@"open_issues"];
 
-        [repos addObject:repo];
+        if (has_issues.intValue > 0) {
+            JBRepo *repo = [[JBRepo alloc] init];
+            
+            [repo setValue:[repoDic valueForKey:@"full_name"] forKey:@"full_name"];
+            [repo setValue:[repoDic valueForKey:@"open_issues"] forKey:@"issues_count"];
+            [repos addObject:repo];
+        }
     }
-    
     return repos;
 }
 
