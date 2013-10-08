@@ -10,4 +10,7 @@
 
 @interface JBRepo : NSObject
 
+@property (strong, nonatomic) NSString *full_name;
+@property (strong, nonatomic) NSString *issues_count;
+
 @end

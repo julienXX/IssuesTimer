@@ -14,27 +14,23 @@
 + (NSArray *)reposFromJSON:(NSData *)objectNotation error:(NSError **)error
 {
     NSError *localError = nil;
-    NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:objectNotation options:0 error:&localError];
-    
+
     if (localError != nil) {
         *error = localError;
         return nil;
     }
-    
+
     NSMutableArray *repos = [[NSMutableArray alloc] init];
+
+    NSArray *results = [NSArray arrayWithArray:objectNotation];
+     NSLog(@"Count %d", results.count);
     
-    NSArray *results = [parsedObject valueForKey:@"results"];
-    NSLog(@"Count %d", results.count);
-    
-    for (NSDictionary *groupDic in results) {
+    for (NSDictionary *repoDic in results) {
         JBRepo *repo = [[JBRepo alloc] init];
         
-        for (NSString *key in groupDic) {
-            if ([repo respondsToSelector:NSSelectorFromString(key)]) {
-                [repo setValue:[groupDic valueForKey:key] forKey:key];
-            }
-        }
-        
+        [repo setValue:[repoDic valueForKey:@"full_name"] forKey:@"full_name"];
+        [repo setValue:[repoDic valueForKey:@"open_issues"] forKey:@"issues_count"];
+
         [repos addObject:repo];
     }
     

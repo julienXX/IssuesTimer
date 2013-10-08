@@ -7,7 +7,34 @@
 //
 
 #import "JBRepoManager.h"
+#import "JBRepoBuilder.h"
+#import "JBGithubCommunicator.h"
 
 @implementation JBRepoManager
+
+- (void)fetchRepos
+{
+    [self.communicator getRepos];
+}
+
+#pragma mark - JBGithubCommunicatorDelegate
+
+- (void)receivedReposJSON:(NSData *)objectNotation
+{
+    NSError *error = nil;
+    NSArray *repos = [JBRepoBuilder reposFromJSON:objectNotation error:&error];
+    
+    if (error != nil) {
+        [self.delegate fetchingReposFailedWithError:error];
+    } else {
+        NSLog(@"did receive Repos");
+        [self.delegate didReceiveRepos:repos];
+    }
+}
+
+- (void)fetchingReposFailedWithError:(NSError *)error
+{
+    [self.delegate fetchingReposFailedWithError:error];
+}
 
 @end

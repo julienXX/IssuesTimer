@@ -19,10 +19,11 @@
     UAGithubEngine *engine = [[UAGithubEngine alloc] initWithUsername:USERNAME password:PASSWORD withReachability:YES];
     
     [engine repositoriesWithSuccess:^(id response) {
-        //        [self setRepos:response];
-        //        NSLog(@"Got an array of repos: %@", self.repos);
+        NSLog(@"receivedRepos");
+        [self.delegate receivedReposJSON:response];
     } failure:^(NSError *error) {
-        [self githubConnectionError:error];
+        NSLog(@"Error Fetch Repos");
+        [self.delegate fetchingReposFailedWithError:error];
     }];
 }
 

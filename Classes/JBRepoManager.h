@@ -7,8 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#import "JBRepoManagerDelegate.h"
 #import "JBGithubCommunicatorDelegate.h"
 
+@class JBGithubCommunicator;
+
 @interface JBRepoManager : NSObject
+
+@property (strong, nonatomic) JBGithubCommunicator *communicator;
+@property (weak, nonatomic) id<JBRepoManagerDelegate> delegate;
+
+- (void)fetchRepos;
 
 @end

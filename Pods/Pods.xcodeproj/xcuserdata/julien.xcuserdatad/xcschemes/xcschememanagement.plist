@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-SBJson.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Pods-UAGithubEngine.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,7 +22,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1945E48BF93840E59F9845F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>69F161DCC5F74BE0BDCBD26B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>713D8031AC1641AE96793D8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8D5AB7C7E63B4BDD9199BA30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95CC95184D994CBE8E8059C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A06736F5EFC04359B9895BA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

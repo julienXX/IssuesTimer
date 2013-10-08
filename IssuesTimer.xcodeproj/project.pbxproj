@@ -20,7 +20,6 @@
 		F9909B381802E47600BDC75F /* JBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9909B371802E47600BDC75F /* JBAppDelegate.m */; };
 		F9909B3B1802E47600BDC75F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9909B391802E47600BDC75F /* Main.storyboard */; };
 		F9909B3E1802E47600BDC75F /* JBMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9909B3D1802E47600BDC75F /* JBMasterViewController.m */; };
-		F9909B411802E47600BDC75F /* JBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9909B401802E47600BDC75F /* JBDetailViewController.m */; };
 		F9909B431802E47600BDC75F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9909B421802E47600BDC75F /* Images.xcassets */; };
 		F9909B4A1802E47600BDC75F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9909B491802E47600BDC75F /* XCTest.framework */; };
 		F9909B4B1802E47600BDC75F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9909B271802E47600BDC75F /* Foundation.framework */; };
@@ -28,6 +27,7 @@
 		F9909B541802E47600BDC75F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9909B521802E47600BDC75F /* InfoPlist.strings */; };
 		F9909B561802E47600BDC75F /* IssuesTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9909B551802E47600BDC75F /* IssuesTimerTests.m */; };
 		F9909B601802E4B300BDC75F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F9909B5F1802E4B300BDC75F /* Podfile */; };
+		F99673DE180319CA002E7777 /* JBDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F99673DD180319CA002E7777 /* JBDetailCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,16 +65,17 @@
 		F9909B3A1802E47600BDC75F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9909B3C1802E47600BDC75F /* JBMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBMasterViewController.h; sourceTree = "<group>"; };
 		F9909B3D1802E47600BDC75F /* JBMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBMasterViewController.m; sourceTree = "<group>"; };
-		F9909B3F1802E47600BDC75F /* JBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBDetailViewController.h; sourceTree = "<group>"; };
-		F9909B401802E47600BDC75F /* JBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBDetailViewController.m; sourceTree = "<group>"; };
 		F9909B421802E47600BDC75F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F9909B481802E47600BDC75F /* IssuesTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IssuesTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9909B491802E47600BDC75F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F9909B511802E47600BDC75F /* IssuesTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IssuesTimerTests-Info.plist"; sourceTree = "<group>"; };
 		F9909B531802E47600BDC75F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F9909B551802E47600BDC75F /* IssuesTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssuesTimerTests.m; sourceTree = "<group>"; };
-		F9909B5F1802E4B300BDC75F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F9909B5F1802E4B300BDC75F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F9909B611802E5CB00BDC75F /* libPods-UAGithubEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-UAGithubEngine.a"; path = "Pods/build/Debug-iphoneos/libPods-UAGithubEngine.a"; sourceTree = "<group>"; };
+		F99673DB18030E9E002E7777 /* JBRepoManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JBRepoManagerDelegate.h; path = Classes/JBRepoManagerDelegate.h; sourceTree = "<group>"; };
+		F99673DC180319CA002E7777 /* JBDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBDetailCell.h; sourceTree = "<group>"; };
+		F99673DD180319CA002E7777 /* JBDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBDetailCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		F9909B1B1802E47600BDC75F = {
 			isa = PBXGroup;
 			children = (
+				F99673DB18030E9E002E7777 /* JBRepoManagerDelegate.h */,
 				F95F536D18030267005D9B3D /* JBRepoManager.h */,
 				F95F536E18030267005D9B3D /* JBRepoManager.m */,
 				F95F536C18030236005D9B3D /* JBGithubCommunicatorDelegate.h */,
@@ -153,10 +155,10 @@
 				F9909B391802E47600BDC75F /* Main.storyboard */,
 				F9909B3C1802E47600BDC75F /* JBMasterViewController.h */,
 				F9909B3D1802E47600BDC75F /* JBMasterViewController.m */,
-				F9909B3F1802E47600BDC75F /* JBDetailViewController.h */,
-				F9909B401802E47600BDC75F /* JBDetailViewController.m */,
 				F9909B421802E47600BDC75F /* Images.xcassets */,
 				F9909B2E1802E47600BDC75F /* Supporting Files */,
+				F99673DC180319CA002E7777 /* JBDetailCell.h */,
+				F99673DD180319CA002E7777 /* JBDetailCell.m */,
 			);
 			path = IssuesTimer;
 			sourceTree = "<group>";
@@ -327,9 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99673DE180319CA002E7777 /* JBDetailCell.m in Sources */,
 				F9909B381802E47600BDC75F /* JBAppDelegate.m in Sources */,
 				F95F53641802F370005D9B3D /* JBRepo.m in Sources */,
-				F9909B411802E47600BDC75F /* JBDetailViewController.m in Sources */,
 				F95F536B1802FC17005D9B3D /* JBRepoBuilder.m in Sources */,
 				F9909B341802E47600BDC75F /* main.m in Sources */,
 				F95F537218030497005D9B3D /* JBGithubCommunicator.m in Sources */,
