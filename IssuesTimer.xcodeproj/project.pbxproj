@@ -44,6 +44,7 @@
 /* Begin PBXFileReference section */
 		A8F7C12B68EF428FA04C6D7E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DC6F69A72A054F9F8F928E1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9056FB018046A4100DDF2A0 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		F95F53621802F370005D9B3D /* JBRepo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBRepo.h; path = Classes/JBRepo.h; sourceTree = "<group>"; };
 		F95F53631802F370005D9B3D /* JBRepo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBRepo.m; path = Classes/JBRepo.m; sourceTree = "<group>"; };
 		F95F53691802FC17005D9B3D /* JBRepoBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBRepoBuilder.h; path = Classes/JBRepoBuilder.h; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		F9909B261802E47600BDC75F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9056FB018046A4100DDF2A0 /* libPods-AFNetworking.a */,
 				F9909B611802E5CB00BDC75F /* libPods-UAGithubEngine.a */,
 				F9909B271802E47600BDC75F /* Foundation.framework */,
 				F9909B291802E47600BDC75F /* CoreGraphics.framework */,

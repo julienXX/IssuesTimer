@@ -8,20 +8,28 @@
 
 #import "JBGithubCommunicator.h"
 #import "JBGithubCommunicatorDelegate.h"
+#import "AFHTTPRequestOperationManager.h"
 
-#define USERNAME @"foo"
-#define PASSWORD @"bar"
+#define TOKEN @"XXX"
 
 @implementation JBGithubCommunicator
 
 - (void) getRepos
 {
-    UAGithubEngine *engine = [[UAGithubEngine alloc] initWithUsername:USERNAME password:PASSWORD withReachability:YES];
-    
-    [engine repositoriesWithSuccess:^(id response) {
-        [self.delegate receivedReposJSON:response];
-    } failure:^(NSError *error) {
-        [self.delegate fetchingReposFailedWithError:error];
+//    UAGithubEngine *engine = [[UAGithubEngine alloc] initWithUsername:USERNAME password:PASSWORD withReachability:YES];
+//    
+//    [engine repositoriesWithSuccess:^(id response) {
+//        [self.delegate receivedReposJSON:response];
+//    } failure:^(NSError *error) {
+//        [self.delegate fetchingReposFailedWithError:error];
+//    }];
+
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSDictionary *parameters = @{@"access_token": TOKEN};
+    [manager GET:@"https://api.github.com/user/repos" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
     }];
 }
 

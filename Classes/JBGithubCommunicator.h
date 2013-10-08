@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UAGithubEngine/UAGithubEngine.h>
 
 @protocol JBGithubCommunicatorDelegate;
 
