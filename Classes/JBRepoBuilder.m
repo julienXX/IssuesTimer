@@ -23,7 +23,6 @@
     NSMutableArray *repos = [[NSMutableArray alloc] init];
 
     NSArray *results = [NSArray arrayWithArray:objectNotation];
-     NSLog(@"Count %d", results.count);
     
     for (NSDictionary *repoDic in results) {
         JBRepo *repo = [[JBRepo alloc] init];

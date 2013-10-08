@@ -27,7 +27,6 @@
     if (error != nil) {
         [self.delegate fetchingReposFailedWithError:error];
     } else {
-        NSLog(@"did receive Repos");
         [self.delegate didReceiveRepos:repos];
     }
 }
