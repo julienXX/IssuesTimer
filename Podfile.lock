@@ -1,10 +1,29 @@
 PODS:
-  - UAGithubEngine (2.3)
+  - AFNetworking (2.0.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.0.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.0.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.0.0)
+  - AFNetworking/Security (2.0.0)
+  - AFNetworking/Serialization (2.0.0)
+  - AFNetworking/UIKit (2.0.0):
+    - AFNetworking/NSURLConnection
 
 DEPENDENCIES:
-  - UAGithubEngine
+  - AFNetworking (~> 2.0)
 
 SPEC CHECKSUMS:
-  UAGithubEngine: 931cbfaaec42ee192dfecf9aeaa75bd4e1afc595
+  AFNetworking: 3fa983b1beaba69566a3374612511e2a6e3fe845
 
 COCOAPODS: 0.25.0
