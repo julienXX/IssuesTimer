@@ -114,11 +114,15 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="githubLogin:" destination="9EE-QN-yaz" eventType="touchDown" id="fy2-YM-1wA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="Ti5-lA-i8y" id="wB3-pB-28R"/>
                         <outlet property="passwordField" destination="4Xz-BF-crh" id="aKE-p2-E9I"/>
                         <outlet property="usernameField" destination="LhB-xV-8Ws" id="s2Y-Vz-pva"/>
                     </connections>

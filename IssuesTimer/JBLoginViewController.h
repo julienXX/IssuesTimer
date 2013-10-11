@@ -12,5 +12,8 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *usernameField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordField;
+@property (strong, nonatomic) IBOutlet UIButton *loginButton;
+
+- (IBAction)githubLogin:(id)sender;
 
 @end

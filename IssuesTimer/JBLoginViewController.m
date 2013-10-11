@@ -37,4 +37,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)githubLogin:(id)sender
+{
+    NSLog(@"Lol");
+}
+
 @end
