@@ -10,7 +10,7 @@
 #import "JBGithubCommunicatorDelegate.h"
 #import "AFHTTPRequestOperationManager.h"
 
-#define TOKEN @"XXX"
+#define TOKEN @"7d40d08c541a29698cd2bb7006e542330d28e95f"
 
 @implementation JBGithubCommunicator
 

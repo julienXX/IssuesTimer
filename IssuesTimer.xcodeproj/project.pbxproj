@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DA22B4DA1D64B97892482D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6F69A72A054F9F8F928E1E /* libPods.a */; };
+		F945B06D1808396F001AACCF /* JBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F945B06C1808396F001AACCF /* JBLoginViewController.m */; };
 		F95F53641802F370005D9B3D /* JBRepo.m in Sources */ = {isa = PBXBuildFile; fileRef = F95F53631802F370005D9B3D /* JBRepo.m */; };
 		F95F536B1802FC17005D9B3D /* JBRepoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F95F536A1802FC17005D9B3D /* JBRepoBuilder.m */; };
 		F95F536F18030267005D9B3D /* JBRepoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F95F536E18030267005D9B3D /* JBRepoManager.m */; };
@@ -44,7 +45,9 @@
 /* Begin PBXFileReference section */
 		A8F7C12B68EF428FA04C6D7E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DC6F69A72A054F9F8F928E1E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9056FB018046A4100DDF2A0 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		F9056FB018046A4100DDF2A0 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		F945B06B1808396F001AACCF /* JBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLoginViewController.h; sourceTree = "<group>"; };
+		F945B06C1808396F001AACCF /* JBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLoginViewController.m; sourceTree = "<group>"; };
 		F95F53621802F370005D9B3D /* JBRepo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBRepo.h; path = Classes/JBRepo.h; sourceTree = "<group>"; };
 		F95F53631802F370005D9B3D /* JBRepo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBRepo.m; path = Classes/JBRepo.m; sourceTree = "<group>"; };
 		F95F53691802FC17005D9B3D /* JBRepoBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBRepoBuilder.h; path = Classes/JBRepoBuilder.h; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				F9909B2E1802E47600BDC75F /* Supporting Files */,
 				F99673DC180319CA002E7777 /* JBDetailCell.h */,
 				F99673DD180319CA002E7777 /* JBDetailCell.m */,
+				F945B06B1808396F001AACCF /* JBLoginViewController.h */,
+				F945B06C1808396F001AACCF /* JBLoginViewController.m */,
 			);
 			path = IssuesTimer;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				F95F53641802F370005D9B3D /* JBRepo.m in Sources */,
 				F95F536B1802FC17005D9B3D /* JBRepoBuilder.m in Sources */,
 				F9909B341802E47600BDC75F /* main.m in Sources */,
+				F945B06D1808396F001AACCF /* JBLoginViewController.m in Sources */,
 				F95F537218030497005D9B3D /* JBGithubCommunicator.m in Sources */,
 				F9909B3E1802E47600BDC75F /* JBMasterViewController.m in Sources */,
 				F95F536F18030267005D9B3D /* JBRepoManager.m in Sources */,
